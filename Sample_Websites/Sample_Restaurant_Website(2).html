@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #c0392b;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #b03a2e;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://picsum.photos/1920/800?restaurant') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+        }
+
+        section h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .menu-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item h4 {
+            margin: 15px 0 10px;
+            text-align: center;
+            color: #e74c3c;
+        }
+
+        .menu-item p {
+            padding: 0 15px 15px;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .menu-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Experience the Taste of Joy</h2>
+    </div>
+
+    <main>
+        <section id="about">
+            <h3>About Us</h3>
+            <p>At Delicious Bites, we pride ourselves on serving the finest meals prepared with fresh ingredients and a touch of love. Our cozy ambiance and exceptional service will leave you with a memorable dining experience.</p>
+        </section>
+
+        <section id="menu">
+            <h3>Our Menu</h3>
+            <div class="menu-section">
+                <div class="menu-item">
+                    <img src="https://picsum.photos/300/200?pizza" alt="Pizza">
+                    <h4>Classic Margherita Pizza</h4>
+                    <p>Fresh mozzarella, tomato sauce, and basil on a crispy crust.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://picsum.photos/300/200?burger" alt="Burger">
+                    <h4>Signature Burger</h4>
+                    <p>Juicy beef patty with fresh toppings and a special sauce.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://picsum.photos/300/200?sushi" alt="Sushi">
+                    <h4>Deluxe Sushi Platter</h4>
+                    <p>An assortment of rolls and sashimi for sushi lovers.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://picsum.photos/300/200?salad" alt="Salad">
+                    <h4>Fresh Caesar Salad</h4>
+                    <p>Romaine lettuce, parmesan, croutons, and Caesar dressing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 15px;
+            background-color: #c0392b;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #b03a2e;
+        }
+
+        .intro {
+            background: url('Images/Restaurant_Background') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .intro h2 {
+            font-size: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .menu-section {
+            grid-column: 1 / -1;
+        }
+
+        .menu-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .menu-item h4 {
+            margin: 15px 0 10px;
+            color: #e74c3c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h2>Welcome to Delicious Bites</h2>
+    </div>
+
+    <main class="container">
+        <section id="about">
+            <h3>About Us</h3>
+            <p>Delicious Bites is your go-to destination for fresh, flavorful meals crafted with care. Experience a unique dining atmosphere with dishes inspired by global cuisines.</p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p>Have questions or want to make a reservation? Reach out to us!</p>
+            <p>Email: contact@deliciousbites.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h3>Our Menu</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="Images/Pizza_Image" alt="Pizza">
+                    <h4>Margherita Pizza</h4>
+                    <p>Classic pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/Burger_Image" alt="Burger">
+                    <h4>Gourmet Burger</h4>
+                    <p>Juicy beef patty with fresh toppings and special sauce.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/Sushi_Image" alt="Sushi">
+                    <h4>Sushi Platter</h4>
+                    <p>Assorted rolls and sashimi for a taste of Japan.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/Salad_Image" alt="Salad">
+                    <h4>Caesar Salad</h4>
+                    <p>Crisp romaine with Caesar dressing and parmesan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>

@@ -16,15 +16,15 @@
             background-color: #333;
             color: white;
             padding: 1rem;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
         }
 
         .home-button {
             position: absolute;
-            top: 50%;
             left: 1rem;
-            transform: translateY(-50%);
             padding: 0.5rem 1rem;
             background-color: #555;
             color: white;
@@ -37,13 +37,16 @@
             background-color: #777;
         }
 
+        .header-title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
         main {
             padding: 2rem;
             text-align: center;
-        }
-
-        h1 {
-            color: white;
         }
 
         .samples {
@@ -113,7 +116,12 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            header {
+            .home-button {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .header-title {
                 font-size: 1.2rem;
             }
 
@@ -126,24 +134,17 @@
                 max-width: 90%;
                 margin: 0 auto;
             }
-
-            .home-button {
-                top: 1rem;
-                transform: none;
-                padding: 0.4rem 0.8rem;
-                font-size: 0.9rem;
-            }
         }
     </style>
 </head>
 <body>
     <header>
         <a href="index.html" class="home-button">Home</a>
-        <h1>Sample Websites</h1>
-        <p>Explore some of the professional websites we can create for you!</p>
+        <h1 class="header-title">Sample Websites</h1>
     </header>
 
     <main>
+        <p>Explore some of the professional websites we can create for you!</p>
         <div class="samples">
             <div class="sample-card">
                 <img src="Sample_Websites/Images/Restaurant_Image" alt="Sample Website 1">

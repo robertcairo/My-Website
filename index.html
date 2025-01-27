@@ -178,13 +178,14 @@
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
+            <form class="contact-form" action="http://localhost:3000/contact" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </section>
+        
     </main>
 
     <footer>
